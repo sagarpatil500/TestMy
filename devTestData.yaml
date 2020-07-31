@@ -1,0 +1,139 @@
+get_all_teams:
+  testData1:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 10
+    OrderBy: ManagerName
+    SortDirection: 0
+    statusCode: 200
+  testData2:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 20
+    OrderBy: TeamName
+    SortDirection: 0
+    statusCode: 200
+  testData3:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 20
+    OrderBy: TeamName
+    SortDirection: 1
+    statusCode: 200
+  testData4:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 50
+    OrderBy: TeamName
+    SortDirection: 0
+    SearchText: Team
+    statusCode: 200
+  testData5:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 50
+    OrderBy: TeamName
+    SortDirection: 0
+    SearchText: Team
+    ManagerIds: 139
+    statusCode: 200
+  testData6:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 50
+    OrderBy: TeamName
+    SortDirection: 0
+    ManagerIds: 139
+    statusCode: 200
+  testData7:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 50
+    OrderBy: TeamName
+    SortDirection: 0
+    ManagerIds: 139,26
+    statusCode: 200
+  testData8:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 50
+    OrderBy: TeamName
+    SortDirection: 0
+    SearchText: Team
+    ManagerIds: 136,26
+    statusCode: 200
+get_manager_team_users:
+  testData1:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 10
+    OrderBy: EmployeeId
+    SortDirection: 0
+    managerId: 139
+    statusCode: 200
+  testData2:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 20
+    OrderBy: EmployeeName
+    SortDirection: 0
+    managerId: 139
+    statusCode: 200
+  testData3:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 50
+    OrderBy: EmployeeName
+    SortDirection: 1
+    managerId: 139
+    statusCode: 200
+get_manager_team_users_count:
+  testData1:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 10
+    OrderBy: EmployeeId
+    SortDirection: 0
+    managerId: 139
+    statusCode: 200
+get_manager_team_list:
+  testData1:
+    employeeType: AUTH_TYPE_MANAGER
+    statusCode: 200
+get_team_change_log:
+  testData1:
+    employeeType: AUTH_TYPE_MANAGER
+    statusCode: 200
+    managerId: 139
+get_all_departments:
+  testData1:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 50
+    OrderBy: DepartmentOwner
+    SortDirection: 0
+    statusCode: 200
+  testData2:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 50
+    OrderBy: DepartmentName
+    SortDirection: 0
+    SearchText: Product Development
+    statusCode: 200
+  testData3:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 50
+    OrderBy: DepartmentName
+    SortDirection: 0
+    SearchText: Pro
+    statusCode: 200
+  testData4:
+    employeeType: AUTH_TYPE_MANAGER
+    PageNumber: 1
+    PageSize: 5
+    OrderBy: DepartmentName
+    SortDirection: 0
+    statusCode: 200
+
